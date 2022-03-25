@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/layout_clinic_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_rectangle"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_clinic"
+            android:background="@drawable/rounded_rectangle_white"
+            android:scaleType="fitCenter"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.7">
+
+            <TextView
+                android:id="@+id/tv_clinic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clinic_name"
+                android:fontFamily="@font/poppins"/>
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:fontFamily="@font/poppins"/>
+            <TextView
+                android:id="@+id/tv_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/physician"
+                android:fontFamily="@font/poppins"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

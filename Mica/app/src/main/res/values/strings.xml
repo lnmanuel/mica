@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Mica</string>
+    <string name="hello_mico">Hello, Mico!</string>
+
+    <string name="back_button">←</string>
+    <string name="close_button">☓</string>
+    <string name="ok_button">✓</string>
+
+    <string name="mica_header">MICA</string>
+    <string name="clinics_header">CLINICS</string>
+    <string name="maps_header">MAPS</string>
+
+    <string name="message_hint">Message</string>
+
+    <string name="chat_button">CHAT</string>
+    <string name="book_button">BOOK</string>
+
+    <string name="appointment_confirmed">Appointment confirmed…</string>
+
+    <string name="appointment_button">Appointment</string>
+    <string name="pay_button">Pay</string>
+    <string name="prescriptions_button">Prescriptions</string>
+    <string name="history_button">History</string>
+    <string name="faqs_button">FAQs</string>
+    <string name="others_button">Others</string>
+
+    <string name="medical_illness_consultation_assistant">Medical Illness Consultation Assistant</string>
+    <string name="how_are_you_feeling">How are you feeling?</string>
+
+    <string name="clinic_name">Clinic name</string>
+    <string name="address">Address</string>
+    <string name="physician">Physician</string>
+
+    <string name="user_sent">This is a message sent by user.</string>
+    <string name="user_receive">This is a message sent by MICA.</string>
+</resources>

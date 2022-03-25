@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layout_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:background="?attr/colorPrimaryVariant"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="@string/maps_header"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_semibold" />
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/ok_button"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_dialog" >
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mv_google_map">
+        </com.google.android.gms.maps.MapView>
+    </FrameLayout>
+</RelativeLayout>

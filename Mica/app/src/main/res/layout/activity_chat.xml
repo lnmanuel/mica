@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChatActivity"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/layout_chat_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="@string/back_button"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/tv_mica"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="@string/mica_header"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_chat_header"
+        app:layout_constraintBottom_toTopOf="@+id/layout_send"
+        tools:itemCount="11"
+        tools:listitem="@layout/item_message_box"/>
+
+    <LinearLayout
+        android:id="@+id/layout_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:hint="@string/message_hint"
+            android:inputType="text"
+            android:fontFamily="@font/poppins"/>
+        <ImageButton
+            android:id="@+id/bt_send"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_send"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
